@@ -2,16 +2,26 @@ package main
 
 import "fmt"
 
+//this has no return value
+func addOne(x int) {
+	x = x + 1
+}
+
 func main() {
 
 	x := 5
 	fmt.Println(x)
-	//xPtr := &x
 
 	var xPtr *int = &x
 	fmt.Println(xPtr)
 
+	addOne(x)
+	fmt.Println(x)
 }
+
+//this has return value
+// func addTwo (x int) int {
+// }
 
 //structs
 
